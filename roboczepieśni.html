@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bóg i sens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bóg i sens</h1>
+        <p>Mały katechizm, modlitwy, pieśni religijne, posługa lektorska, ministrant, psałterzysta</p>
+    </header>
+  <nav>
+    <div class="marquee">
+  <div class="marquee-content">
+    Strona w budowie! Będą nowe treści i uzupełnione źródła
+  </div>
+</div>
+  <ul class="menu">
+    <li><a href="index.html">Strona główna</a></li>
+
+    <li>
+      <a href="#">Katechizm</a>
+      <ul class="submenu">
+        <li><a href="malykatechizm.html">Mały katechizm</a></li>
+        <li><a href="prawdykatechizmowe.html">Prawdy katechizmowe</a></li>
+      </ul>
+    </li>
+    <li>
+        <a href="#">Modlitwy</a>
+        <ul class="submenu">
+            <li><a href="#">Komunia</a>
+            <ul class="submenu">
+                <li><a href="duchowa.html">Duchowa</a></li>
+                <li><a href="podczasmszy.html">Podczas Mszy Świętej</a></li>
+            </ul></li>
+            <li><a href="rozaniec.html">Różaniec</a></li>
+            <li><a href="#">Południowa</a>
+            <ul class="submenu">
+                <li><a href="aniolpanski.html">Anioł Pański</a></li>
+                <li><a href="krolowoniebios.html">Królowo Niebios</a></li>
+            </ul></li>
+            <li><a href="osppe.html">O powołania</a></li>
+            <li><a href="koronka.html">Koronka do Bożego Miłosierdzia</a></li>
+            <li><a href="duchowaadopcja.html">Duchowa Adopcja</a></li>
+            <li><a href="ratunek.html">Z Maryją ratuj człowieka</a></li>
+            <li><a href="apeljasnogorski.html">Apel Jasnogórski</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Pieśni</a>
+        <ul class="submenu">
+            <li><a href="adwentowe.html">Adwentowe</a></li>
+            <li><a href="eucharystyczne.html">Eucharystyczne</a></li>
+            <li><a href="koledy.html">Kolędy</a></li>
+            <li><a href="maryjne.html">Maryjne</a></li>
+            <li><a href="miłosierdzie.html">Do Bożego Miłosierdzia</a></li>
+            <li><a href="sercejezusa.html">Do Serca Jezusa</a></li>
+            <li><a href="wielkanocne.html">Wielkanocne</a></li>
+            <li><a href="wielkopostne.html">Wielkopostne</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Posługa</a>
+        <ul class="submenu">
+            <li><a href="lektor.html">Lektorska</a></li>
+            <li><a href="ministrant.html">Ministrant</a></li>
+            <li><a href="kantor.html">Psałterzysta</a></li>
+        </ul>
+    </li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
+<div id="clock-container">
+  <div id="clock"></div>
+</div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+  const options = { 
+    weekday: 'long', 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric' 
+  };
+  
+  const date = now.toLocaleDateString('pl-PL', options);
+  const time = now.toLocaleTimeString('pl-PL');
+  
+  document.getElementById('clock').innerHTML = 
+    date + "<br>" + time;
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+    <section>
+        <h1>Pieśni religijne</h1>
+        <h2>Bogurodzica (Pierwszy polski hymn narodowy)</h2>
+<p>
+Bogurodzica, dziewica, Bogiem sławiena Maryja!<br>
+U twego syna, Gospodzina, matko zwolena Maryja!<br>
+Zyszczy nam, spuści nam.<br>
+Kirielejson.<br>
+Twego dziela Krzciciela, bożycze,<br>
+Usłysz głosy, napełni myśli człowiecze.<br>
+Słysz modlitwę, jąż nosimy,<br>
+A dać raczy, jegoż prosimy,<br>
+A na świecie zbożny pobyt,<br>
+Po żywocie rajski przebyt.<br>
+Kirielejson.
+</p>
+
+<h2>Duchu Święty wołam przyjdź</h2>
+<ul>
+    <li>
+        Duchu Święty wołam przyjdź<br>
+        Bądź jak ogień w duszy mej<br>
+        Bądź jak ogień w ciele mym<br>
+        Rozpal mnie (x2)
+    </li>
+    <li>
+        Wszechmogący Bóg jest pośrod nas<br>
+        Miłosierdzie jego wielkie jest<br>
+        Okazuje dobroć swoją dziś<br>
+        Dla tych (x2)<br>
+        Którzy chcą miłować go.
+    </li>
+</ul>
+<h2>Kiedy ranne wstają zorze</h2>
+<ol>
+    <li>
+        Kiedy ranne wstają zorze<br>
+        Tobie ziemia, Tobie morze,<br>
+        Tobie śpiewa żywioł wszelki:<br>
+        Bądź pochwalon, Boże wielki!
+    </li>
+    <li>
+        A człowiek, który bez miary<br>
+        Obsypany Twymi dary,<br>
+        Coś go stworzył i ocalił<br>
+        A czemuż by Cię nie chwalił?
+    </li>
+    <li>
+        Ledwie oczy przetrzeć zdołam,<br>
+        Wnet do mego Pana wołam,<br>
+        Do mego Boga na Niebie<br>
+        I szukam Go wkoło siebie.
+    </li>
+    <li>
+        Wielu snem śmierci upadli,<br>
+        Co się wczoraj spać pokładli.<br>
+        My się jeszcze obudzili,<br>
+        Byśmy Cię, Boże, chwalili.
+    </li>
+    <li>
+        Boże w Trójcy niepojęty,<br>
+        Ojcze, Synu, Duchu Święty,<br>
+        Tobie chwałę oddajemy,<br>
+        Byś nas poświęcił, prosimy. / *Niech dla Ciebie dziś żyjemy.
+    </li>
+</ol>
+<h2>Modlitwa najcichsza (Józef Andrzej Frasik, 1910)</h2>
+<p>
+Ty jesteś siewna, Tyś jest różańcowa,<br>
+Ty polem szumisz, rankiem po rosie chodzisz –<br>
+Ty jesteś Panna polna, ty jesteś łąkowa –<br>
+Gwiazdo zaranna! Przewodniczko łodzi!<br>
+Tobie przydrożne kapliczki stroją dziewczyny,<br>
+Tobie śpiew wieczorny rodzi łąka<br>
+Gałązki ciszy ugornej, Pąku wierzbiny –<br>
+Drżąca słońcem na wietrze sinym.<br><br>
+
+Ty jesteś, z obrazów Madonno, najpiękniejsza Panna,<br>
+Ty jesteś kwietna, Ty jesteś przedziwna,<br>
+Pod zmierzch wieczorna jesteś, a rankiem zaranna,<br>
+Ty jesteś wzniosła jak Góra Oliwna.<br>
+Tyś Częstochowska i Tyś Ostrobramska,<br>
+Tyś Kalwaryjska i Tyś jest przydrożna –<br>
+Na małych jasnaś z dzieciństwa obrazkach –<br>
+A Tyś strapiona! Panno pobożna.<br><br>
+
+Ty jesteś śnieżna, boś Ty oczyszczona –<br>
+Tyś jest gromniczna i Tyś jest bolesna –<br>
+Tyś na osiołku w ucieczce strudzona,<br>
+Ty jesteś ludzka – a Tyś niedoczesna.<br>
+Tyś jest najświętsza i Ty jesteś dobra,<br>
+Ty jesteś polska – a Tyś jest królewska.<br>
+Szczęśliwy, kto jaką lepszą część Ciebie obrał,<br>
+Domie złoty! Sierocych ros Bramo niebieska!
+</p>
+<h2>Modlitwa świętego Ignacego z Loyoli</h2>
+<ul>
+    <li>Duszo Chrystusowa, uświęć mnie.</li>
+    <li>Ciało Chrystusowe, zbaw mnie.</li>
+    <li>Krwi Chrystusowa, napój mnie.</li>
+    <li>Wodo z boku Chrystusowego, obmyj mnie.</li>
+    <li>Męko Chrystusowa, pokrzep mnie.</li>
+    <li>O dobry Jezu, wysłuchaj mnie.</li>
+    <li>W ranach swoich ukryj mnie.</li>
+    <li>Nie dopuść mi oddalić się od Ciebie.</li>
+    <li>Od złego ducha broń mnie.</li>
+    <li>W godzinę śmierci wezwij mnie.</li>
+    <li>I każ mi przyjść do siebie,  
+        abym z świętymi Twymi chwalił Cię  
+        na wieki wieków. Amen.</li>
+</ul>
+<h2>Niechaj będzie pochwalony od nas wszystkich…</h2>
+<p>
+Niechaj będzie pochwalony.<br>
+Od nas wszystkich uwielbiony,<br>
+Przenajświętszy sakrament,<br>
+Ten niebieski testament.<br><br>
+<i>3x</i>
+</p>
+<h2>O Stworzycielu Duchu Przyjdź – Hymn do Ducha Świętego</h2>
+<ol>
+    <li>
+        O Stworzycielu Duchu, przyjdź,<br>
+        Nawiedź dusz wiernych Tobie krąg.<br>
+        Niebieską łaskę zesłać racz<br>
+        Sercom, co dziełem są Twych rąk.
+    </li>
+    <li>
+        Pocieszycielem jesteś zwan<br>
+        I najwyższego Boga Dar.<br>
+        Tyś namaszczeniem naszych dusz,<br>
+        Zdrój żywy, Miłość, ognia żar.
+    </li>
+    <li>
+        Ty darzysz łaską siedmiokroć,<br>
+        Bo moc z prawicy Ojca masz.<br>
+        Przez Ojca obiecany nam,<br>
+        Mową wzbogacasz język nasz.
+    </li>
+    <li>
+        Światłem rozjaśnij naszą myśl,<br>
+        W serca nam miłość świętą wlej<br>
+        I wątłą słabość naszych ciał<br>
+        Pokrzep stałością mocy swej.
+    </li>
+    <li>
+        Nieprzyjaciela odpędź w dal<br>
+        I Twym pokojem obdarz wraz.<br>
+        Niech w drodze za przewodem Twym<br>
+        Miniemy zło, co kusi nas.
+    </li>
+    <li>
+        Daj nam przez Ciebie Ojca znać,<br>
+        Daj, by i Syn poznany był<br>
+        I Ciebie, jedno tchnienie Dwóch,<br>
+        Niech wyznajemy z wszystkich sił.
+    </li>
+    <li>
+        Niech Bogu Ojcu chwała brzmi,<br>
+        Synowi, który zmartwychwstał<br>
+        I Temu, co pociesza nas<br>
+        Niech hołd wieczystych płynie chwał.<br>
+        Amen.
+    </li>
+</ol>
+<h2>O Zbawcza Hostio</h2>
+<ul>
+    <li>
+        O Zbawcza Hostio godna czci,<br>
+        Co lud do niebios wiedziesz bram:<br>
+        Znój srogi nęka wiernych Ci,<br>
+        Więc siłę, pomoc ześlij nam.
+    </li>
+    <li>
+        Jednemu w Trójcy Władcy ziem,<br>
+        Niech będzie chwała w każdy czas.<br>
+        Niech On wieczystym życiem swym<br>
+        W Ojczyźnie rajskiej darzy nas. Amen.
+    </li>
+</ul>
+    <h2>Pieśń chwały – Gloria (Chwała na wysokości Bogu)</h2>
+<p>
+Chwała na wysokości Bogu<br>
+a na ziemi pokój ludziom dobrej woli.<br>
+Chwalimy Cię,<br>
+Błogosławimy Cię,<br>
+Wielbimy Cię.<br>
+Wysławiamy Cię.<br>
+Dzięki Ci składamy,<br>
+bo wielka jest chwała Twoja.<br>
+Panie Boże, Królu nieba,<br>
+Boże Ojcze wszechmogący.<br>
+Panie, Synu Jednorodzony,<br>
+<strong>Jezu Chryste</strong>.<br>
+Panie Boże, Baranku Boży,<br>
+Synu Ojca.<br>
+Który gładzisz grzechy świata,<br>
+zmiłuj się nad nami.<br>
+Który gładzisz grzechy świata,<br>
+przyjm błaganie nasze.<br>
+Który siedzisz po prawicy Ojca,<br>
+zmiłuj się nad nami.<br>
+Albowiem tylko Tyś jest święty.<br>
+Tylko Tyś jest Panem.<br>
+Tylko Tyś Najwyższy,<br>
+<strong>Jezu Chryste</strong>.<br>
+Z Duchem Świętym<br>
+w chwale Boga Ojca.<br>
+Amen
+</p>
+
+<h2>Prawdziwa miłość – Pieśń (1 Kor 13, 1–8. 13)</h2>
+<p>
+Gdybym mówił językami ludzi i aniołów, *<br>
+a miłości bym nie miał,<br>
+<strong>Stałbym się jak miedź brzęcząca *</strong><br>
+<strong>albo cymbał brzmiący.</strong><br>
+Gdybym też miał dar prorokowania *<br>
+i poznał wszystkie tajemnice,<br>
+<strong>I posiadał wszelką wiedzę *</strong><br>
+<strong>i wszelką wiarę, tak iżbym góry przenosił,</strong><br>
+A miłości bym nie miał, *<br>
+byłbym niczym.<br>
+<strong>I gdybym całą majętność moją rozdał na jałmużnę, †</strong><br>
+<strong>a ciało wydał na spalenie, lecz nie miał miłości, *</strong><br>
+<strong>nic bym nie zyskał.</strong><br>
+Miłość cierpliwa jest i łaskawa, †<br>
+miłość nie zazdrości i nie szuka uznania, *<br>
+nie unosi się pychą;<br>
+<strong>Nie dopuszcza się bezwstydu i swego nie szuka, *</strong><br>
+<strong>nie unosi się gniewem, nie pamięta złego;</strong><br>
+Nie cieszy się z niesprawiedliwości, *<br>
+lecz weseli się z prawdy.<br>
+<strong>Wszystko znosi, wszystkiemu wierzy, †</strong><br>
+<strong>we wszystkim pokłada nadzieję *</strong><br>
+<strong>i wszystko przetrzyma.</strong><br>
+Miłość nigdy nie ustaje *<br>
+i nie jest jak proroctwa, które się skończą,<br>
+<strong>Albo jak dar języków, który zniknie, *</strong><br>
+<strong>lub jak wiedza, której zabraknie.</strong><br>
+Teraz więc trwają te trzy: wiara, nadzieja i miłość, *<br>
+a miłość jest z nich największa.<br><br>
+
+<strong>Chwała Ojcu i Synowi, *</strong><br>
+<strong>i Duchowi Świętemu.</strong><br>
+Jak była na początku, teraz i zawsze, *<br>
+i na wieki wieków. Amen.
+</p>
+
+<h2>Przed tak wielkim Sakramentem</h2>
+<p>
+Przed tak wielkim Sakramentem<br>
+Upadajmy wszyscy wraz,<br>
+Niech przed Nowym Testamentem<br>
+Starych praw ustąpi czas.<br>
+Co dla zmysłów niepojęte,<br>
+Niech dopełni wiara w nas.<br><br>
+
+Bogu Ojcu i Synowi<br>
+Hołd po wszystkie nieśmy dni.<br>
+Niech podaje wiek wiekowi<br>
+Hymn triumfu, dzięki, czci.<br>
+A równemu im Duchowi<br>
+Niechaj wieczna chwała brzmi.<br>
+Amen.
+</p>
+
+<h2>Sekwencja o Duchu Świętym</h2>
+<ul>
+    <li>
+        Przybądź, Duchu Święty,<br>
+        Spuść z niebiosów wzięty<br>
+        Światła Twego strumień.<br>
+        Przyjdź, Ojcze ubogich,<br>
+        Dawco darów mnogich,<br>
+        Przyjdź Światłości sumień!
+    </li>
+
+    <li>
+        O najmilszy z Gości,<br>
+        Słodka serc radości,<br>
+        Słodkie orzeźwienie.<br>
+        W pracy Tyś ochłodą,<br>
+        W skwarze żywą wodą,<br>
+        W płaczu utulenie.
+    </li>
+
+    <li>
+        Światłości najświętsza!<br>
+        Serc wierzących wnętrza<br>
+        Poddaj swej potędze!<br>
+        Bez Twojego tchnienia<br>
+        Cóż jest wśród stworzenia?<br>
+        Jeno cierń i nędze!
+    </li>
+
+    <li>
+        Obmyj, co nieświęte,<br>
+        Oschłym wlej zachętę,<br>
+        Ulecz serca ranę!<br>
+        Nagnij, co jest harde,<br>
+        Rozgrzej serca twarde,<br>
+        Prowadź zabłąkane.
+    </li>
+
+    <li>
+        Daj Twoim wierzącym,<br>
+        W Tobie ufającym,<br>
+        Siedmiorakie dary!<br>
+        Daj zasługę męstwa,<br>
+        Daj wieniec zwycięstwa,<br>
+        Daj szczęście bez miary!
+    </li>
+</ul>
+
+<h2>Wielbić Pana chcę</h2>
+<p>
+Wielbić Pana chcę,<br>
+Radosną śpiewać pieśń.<br>
+Wielbić Pana chcę,<br>
+On źródłem życia jest.<br>
+<i>3x</i>
+</p>
+
+<h2>Witaj Królowo, Matko Miłosierdzia</h2>
+<p>
+Witaj, Królowo, Matko miłosierdzia,<br>
+życia, słodyczy i nadziejo nasza, witaj!<br>
+Do Ciebie wołamy wygnańcy, synowie Ewy;<br>
+do Ciebie wzdychamy jęcząc i płacząc na tym łez padole.<br><br>
+
+Przeto, Orędowniczko nasza,<br>
+one miłosierne oczy Twoje na nas zwróć,<br>
+a Jezusa, błogosławiony owoc żywota Twojego,<br>
+po tym wygnaniu nam okaż.<br>
+O łaskawa, o litościwa, o słodka Panno Maryjo!
+</p>
+
+<h2>Wszystkie nasze dzienne sprawy</h2>
+<ol>
+    <li>
+        Wszystkie nasze dzienne sprawy<br>
+        przyjm litośnie Boże prawy,<br>
+        A gdy będziem zasypiali,<br>
+        niech Cię nawet sen nasz chwali.
+    </li>
+    <li>
+        Twoje oczy obrócone<br>
+        dzień i noc patrzą w tę stronę,<br>
+        Gdzie niedołężność człowieka<br>
+        Twojego ratunku czeka.
+    </li>
+    <li>
+        Odwracaj nocne przygody,<br>
+        Od wszelakiej broń nas szkody,<br>
+        Miej nas zawsze w swojej pieczy,<br>
+        Stróżu i Sędzio człowieczy.
+    </li>
+    <li>
+        A gdy już niebo osiędziem,<br>
+        Tobie wspólnie śpiewać będziem,<br>
+        Boże w Trójcy niepojęty,<br>
+        Święty, na wiek wieków Święty.
+    </li>
+    <li>
+        O Najświętsza Matko droga<br>
+        Proś za nami w niebie Boga<br>
+        Proś i czuwaj wciąż nad nami<br>
+        Ze świętymi aniołami
+    </li>
+    <li>
+        A za dzień Ci dziękujemy<br>
+        O szczęśliwą noc prosimy<br>
+        Byś nas zawsze błogosławił<br>
+        A po śmierci duszę zbawił.
+    </li>
+</ol>
+
+    </section>
+
+</body>
+</html>
