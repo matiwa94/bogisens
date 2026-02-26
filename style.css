@@ -204,3 +204,53 @@ h2 {
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   z-index: 9999;
 }
+
+section.content img {
+  max-width: 100%;  /* nie wyjdzie poza box */
+  height: auto;     /* zachowuje proporcje */
+  display: block;   /* usuwa ewentualne odstępy pod obrazem */
+  margin: 20px auto; /* wyśrodkowanie w boxie */
+}
+
+figure {
+  margin: 20px auto;
+  max-width: 100%;  /* figure też nie wyjdzie poza box */
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  margin-right: 20px;
+  position: sticky;
+  top: 20px; /* zostaje przy scrollowaniu */
+}
+
+.content {
+  flex: 1;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  color: #2c3e50;
+}
+
+.sidebar a:hover {
+  color: #8e6c88;
+}
