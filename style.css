@@ -189,3 +189,18 @@ h2 {
   padding-bottom: 5px;
   letter-spacing: 0.5px;
 }
+
+#clock-container {
+  position: fixed;
+  top: 80px;
+  right: 15px;
+  background: #111;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: right;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  z-index: 9999;
+}

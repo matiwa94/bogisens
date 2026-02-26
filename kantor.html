@@ -56,6 +56,30 @@
     <li><a href="kontakt.html">Kontakt</a></li>
   </ul>
 </nav>
+<div id="clock-container">
+  <div id="clock"></div>
+</div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+  const options = { 
+    weekday: 'long', 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric' 
+  };
+  
+  const date = now.toLocaleDateString('pl-PL', options);
+  const time = now.toLocaleTimeString('pl-PL');
+  
+  document.getElementById('clock').innerHTML = 
+    date + "<br>" + time;
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+</script>
     <section>
         
     <h2>Komunia Duchowa</h2>
