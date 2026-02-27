@@ -254,3 +254,13 @@ figure img {
 .sidebar a:hover {
   color: #8e6c88;
 }
+
+.menu { display: flex; list-style: none; }
+.submenu { display: none; list-style: none; }
+.submenu.active { display: block; }
+
+@media (max-width: 768px) {
+  .menu { display: none; flex-direction: column; }
+  .menu.active { display: flex; }
+  .hamburger { display: block; cursor: pointer; font-size: 28px; }
+}

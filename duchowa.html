@@ -16,7 +16,19 @@
   <div class="marquee-content">
     Strona w budowie! Będą nowe treści i uzupełnione źródła
   </div>
+
 </div>
+  
+
+<div id="menu-container"></div>
+<script>
+fetch("menu.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("menu-container").innerHTML = data;
+  });
+</script>
+
  <div id="clock-container">
   <div id="clock"></div>
 </div>
