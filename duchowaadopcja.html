@@ -17,62 +17,43 @@
     Strona w budowie! Będą nowe treści i uzupełnione źródła
   </div>
 </div>
-  <ul class="menu">
-    <li><a href="index.html">Strona główna</a></li>
 
-    <li>
-      <a href="#">Katechizm</a>
-      <ul class="submenu">
-        <li><a href="malykatechizm.html">Mały katechizm</a></li>
-        <li><a href="prawdykatechizmowe.html">Prawdy katechizmowe</a></li>
-      </ul>
-    </li>
-    <li>
-        <a href="modlitwy.html">Modlitwy</a>
-        <ul class="submenu">
-            <li><a href="#">Komunia</a>
-            <ul class="submenu">
-                <li><a href="duchowa.html">Duchowa</a></li>
-                <li><a href="podczasmszy.html">Podczas Mszy Świętej</a></li>
-            </ul></li>
-            <li><a href="rozaniec.html">Różaniec</a></li>
-            <li><a href="#">Południowa</a>
-            <ul class="submenu">
-                <li><a href="aniolpanski.html">Anioł Pański</a></li>
-                <li><a href="krolowoniebios.html">Królowo Niebios</a></li>
-            </ul></li>
-            <li><a href="osppe.html">O powołania</a></li>
-            <li><a href="koronka.html">Koronka do Bożego Miłosierdzia</a></li>
-            <li><a href="duchowaadopcja.html">Duchowa Adopcja</a></li>
-            <li><a href="ratunek.html">Z Maryją ratuj człowieka</a></li>
-            <li><a href="apeljasnogorski.html">Apel Jasnogórski</a></li>
-        </ul>
-    </li>
-    <li><a href="#">Pieśni</a>
-        <ul class="submenu">
-            <li><a href="adwentowe.html">Adwentowe</a></li>
-            <li><a href="eucharystyczne.html">Eucharystyczne</a></li>
-            <li><a href="koledy.html">Kolędy</a></li>
-            <li><a href="maryjne.html">Maryjne</a></li>
-            <li><a href="miłosierdzie.html">Do Bożego Miłosierdzia</a></li>
-            <li><a href="sercejezusa.html">Do Serca Jezusa</a></li>
-            <li><a href="wielkanocne.html">Wielkanocne</a></li>
-            <li><a href="wielkopostne.html">Wielkopostne</a></li>
-        </ul>
-    </li>
-    <li>
-        <a href="#">Posługa</a>
-        <ul class="submenu">
-            <li><a href="lektor.html">Lektorska</a></li>
-            <li><a href="ministrant.html">Ministrant</a></li>
-            <li><a href="psalterzysta.html">Psałterzysta</a></li>
-        </ul>
-    </li>
-    <li><a href="omnie.html">O mnie</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-  </ul>
+
+<div id="menu-container"></div>
+<script>
+fetch("menu.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("menu-container").innerHTML = data;
+  });
+</script>
+
 </nav>
-        
+<div id="clock-container">
+  <div id="clock"></div>
+</div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+  const options = { 
+    weekday: 'long', 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric' 
+  };
+  
+  const date = now.toLocaleDateString('pl-PL', options);
+  const time = now.toLocaleTimeString('pl-PL');
+  
+  document.getElementById('clock').innerHTML = 
+    date + "<br>" + time;
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+<section>
     <h2>Modlitwa Duchowej Adopcji Dziecka Poczętego <a href="https://www.radiojasnagora.pl/md5-modlitwa-duchowej-adopcji">(18:20)</a></h2>
 <p>
 S. W imię Ojca i Syna i Ducha Świętego.<br>

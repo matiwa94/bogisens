@@ -17,60 +17,17 @@
     Strona w budowie! Będą nowe treści i uzupełnione źródła
   </div>
 </div>
-   <ul class="menu">
-    <li><a href="index.html">Strona główna</a></li>
 
-    <li>
-      <a href="#">Katechizm</a>
-      <ul class="submenu">
-        <li><a href="malykatechizm.html">Mały katechizm</a></li>
-        <li><a href="prawdykatechizmowe.html">Prawdy katechizmowe</a></li>
-      </ul>
-    </li>
-    <li>
-        <a href="modlitwy.html">Modlitwy</a>
-        <ul class="submenu">
-            <li><a href="#">Komunia</a>
-            <ul class="submenu">
-                <li><a href="duchowa.html">Duchowa</a></li>
-                <li><a href="podczasmszy.html">Podczas Mszy Świętej</a></li>
-            </ul></li>
-            <li><a href="rozaniec.html">Różaniec</a></li>
-            <li><a href="#">Południowa</a>
-            <ul class="submenu">
-                <li><a href="aniolpanski.html">Anioł Pański</a></li>
-                <li><a href="krolowoniebios.html">Królowo Niebios</a></li>
-            </ul></li>
-            <li><a href="osppe.html">O powołania</a></li>
-            <li><a href="koronka.html">Koronka do Bożego Miłosierdzia</a></li>
-            <li><a href="duchowaadopcja.html">Duchowa Adopcja</a></li>
-            <li><a href="ratunek.html">Z Maryją ratuj człowieka</a></li>
-            <li><a href="apeljasnogorski.html">Apel Jasnogórski</a></li>
-        </ul>
-    </li>
-    <li><a href="#">Pieśni</a>
-        <ul class="submenu">
-            <li><a href="adwentowe.html">Adwentowe</a></li>
-            <li><a href="eucharystyczne.html">Eucharystyczne</a></li>
-            <li><a href="koledy.html">Kolędy</a></li>
-            <li><a href="maryjne.html">Maryjne</a></li>
-            <li><a href="miłosierdzie.html">Do Bożego Miłosierdzia</a></li>
-            <li><a href="sercejezusa.html">Do Serca Jezusa</a></li>
-            <li><a href="wielkanocne.html">Wielkanocne</a></li>
-            <li><a href="wielkopostne.html">Wielkopostne</a></li>
-        </ul>
-    </li>
-    <li>
-        <a href="#">Posługa</a>
-        <ul class="submenu">
-            <li><a href="lektor.html">Lektorska</a></li>
-            <li><a href="ministrant.html">Ministrant</a></li>
-            <li><a href="psalterzysta.html">Psałterzysta</a></li>
-        </ul>
-    </li>
-    <li><a href="omnie.html">O mnie</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-  </ul>
+
+<div id="menu-container"></div>
+<script>
+fetch("menu.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("menu-container").innerHTML = data;
+  });
+</script>
+
 </nav>
 <div id="clock-container">
   <div id="clock"></div>
@@ -97,8 +54,49 @@ setInterval(updateClock, 1000);
 updateClock();
 </script>
     <section>
-        <h1>Pieśni maryjne</h1>
-    </section>
+        <h1>Pieśni maryjne</h1><figure>
+        <img src="images/bogurodzica.jpg" alt="Bogurodzica">
+        <figcaption>
+          Bogurodzica
+          Źródło: 
+          [1]
+        </figcaption>
+      </figure>
+        <h2>Bogurodzica (Pierwszy polski hymn narodowy)</h2>
+        <p>
+        Bogurodzica, dziewica, Bogiem sławiena Maryja!<br>
+        U twego syna, Gospodzina, matko zwolena Maryja!<br>
+        Zyszczy nam, spuści nam.<br>
+        Kirielejson.<br>
+        Twego dziela Krzciciela, bożycze,<br>
+        Usłysz głosy, napełni myśli człowiecze.<br>
+        Słysz modlitwę, jąż nosimy,<br>
+        A dać raczy, jegoż prosimy,<br>
+        A na świecie zbożny pobyt,<br>
+        Po żywocie rajski przebyt.<br>
+        Kirielejson.
+        </p>
+        
+        <h2>Witaj Królowo, Matko Miłosierdzia</h2>
+        <p>
+        Witaj, Królowo, Matko miłosierdzia,<br>
+        życia, słodyczy i nadziejo nasza, witaj!<br>
+        Do Ciebie wołamy wygnańcy, synowie Ewy;<br>
+        do Ciebie wzdychamy jęcząc i płacząc na tym łez padole.<br><br>
 
+        Przeto, Orędowniczko nasza,<br>
+        one miłosierne oczy Twoje na nas zwróć,<br>
+        a Jezusa, błogosławiony owoc żywota Twojego,<br>
+        po tym wygnaniu nam okaż.<br>
+        O łaskawa, o litościwa, o słodka Panno Maryjo!
+        </p>
+    </section>
+<section>
+    <h2>Bibliografia</h2>
+  <ol>
+    <li><a href="https://www.facebook.com/photo.php?fbid=5455708047842367&id=622617124484841&set=a.631409140272306">
+      https://www.facebook.com/photo.php?fbid=5455708047842367&id=622617124484841&set=a.631409140272306</a> [dostęp 2026-02-27.]</li>
+    </li>
+    </section>
 </body>
 </html>
