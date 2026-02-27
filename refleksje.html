@@ -2,13 +2,13 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Kolędy i pastorałki - Bóg i sens</title>
+    <title>Modlitwy, Pieśni, Katechizm, Lektor - Bóg i sens</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Bóg i sens</h1>
+        <h1>Refleksje - Bóg i sens</h1>
         <p>Mały katechizm, modlitwy, pieśni religijne, posługa lektorska, ministrant, psałterzysta</p>
     </header>
   <nav>
@@ -18,30 +18,7 @@
   </div>
 </div>
 
-<div id="clock-container">
-  <div id="clock"></div>
-</div>
 
-<script>
-function updateClock() {
-  const now = new Date();
-  const options = { 
-    weekday: 'long', 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
-  };
-  
-  const date = now.toLocaleDateString('pl-PL', options);
-  const time = now.toLocaleTimeString('pl-PL');
-  
-  document.getElementById('clock').innerHTML = 
-    date + "<br>" + time;
-}
-
-setInterval(updateClock, 1000);
-updateClock();
-</script>
 
 <div class="hamburger" onclick="toggleMenu()">☰</div>
 
@@ -68,8 +45,11 @@ function toggleMenu() {
 }
 </script>
 
-
 </nav>
+<div id="clock-container">
+  <div id="clock"></div>
+</div>
+
 <script>
 function updateClock() {
   const now = new Date();
@@ -90,9 +70,37 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 </script>
-    <section>
-        <h1>Kolędy i pastorałki</h1>
-    </section>
+<section>
+<main class="container">
+    <div class="content">
+        <article class="post">
+            <h2>Wpis #1 – Powitanie</h2>
+            <p class="date">27 lutego 2026</p>
+            <p>Witam na moim blogu! Tutaj znajdziesz przemyślenia, inspiracje i małe ciekawostki. 🌟</p>
+        </article>
 
+        <article class="post">
+            <h2>Wpis #2 – Pierwsze refleksje</h2>
+            <p class="date">26 lutego 2026</p>
+            <p>Chcę, aby ten blog był przyjemny dla oka, spokojny i lekki, bez nadmiaru efektów. 🌿</p>
+        </article>
+    </div>
+
+    <aside class="sidebar">
+        <h3>Kategorie</h3>
+        <ul>
+            <li><a href="#">Refleksje</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Technologia</a></li>
+        </ul>
+
+        <h3>Archiwum</h3>
+        <ul>
+            <li><a href="#">Luty 2026</a></li>
+            <li><a href="#">Styczeń 2026</a></li>
+        </ul>
+    </aside>
+</main>
+</section>
 </body>
 </html>
