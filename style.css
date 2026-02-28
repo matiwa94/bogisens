@@ -1,3 +1,28 @@
+/*sidebar*/
+#toc {
+  position: sticky; /* przyklejony do ekranu */
+  top: 10px;        /* odstęp od góry okna */
+  max-height: 80vh; /* wysokość sidebaru */
+  overflow-y: auto; /* jeśli lista jest długa, pojawia się scroll */
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 1;         /* niższy niż rozwijane menu */
+}
+#toc a {
+  text-decoration: none;
+  color: #333;
+}
+#toc a:hover {
+  color: #0077cc;
+}
+
+/*płynne przewijanie*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*dalsze*/
 body {
     font-family: 'Georgia', serif;
     background-color: #f4f1ea;
@@ -65,6 +90,7 @@ nav {
     margin: 0;
     min-width: 200px;
     display: none;
+  z-index: 9999;      /* wyższy niż sidebar */
 }
 
 .submenu li {

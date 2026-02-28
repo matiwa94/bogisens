@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <h1>Bóg i sens</h1>
         <p>Mały katechizm, modlitwy, pieśni religijne, posługa lektorska, ministrant, psałterzysta</p>
     </header>
   <nav>
     <div class="marquee">
-    <div class="marquee-content">
-        Strona w budowie! Będą nowe treści i uzupełnione źródła
-    </div>
+  <div class="marquee-content">
+    Strona w budowie! Będą nowe treści i uzupełnione źródła
+  </div>
 </div>
+
 
 <div class="hamburger" onclick="toggleMenu()">☰</div>
 
@@ -43,7 +45,6 @@ function toggleMenu() {
 </script>
 
 </nav>
-
 <div id="clock-container">
   <div id="clock"></div>
 </div>
@@ -69,370 +70,371 @@ setInterval(updateClock, 1000);
 updateClock();
 </script>
 
-<div class="container">
-    <section>
-        <h1>Mały katechizm</h1>
+<section>
+<!---sidebar-->
+<script>
+document.querySelectorAll('#toc a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault(); // blokuje standardowe skakanie
+    const target = document.querySelector(link.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' }); // płynne przewijanie
+  });
+});
+</script>
 
-    <h2>Modlitwa Pańska (Ojcze nasz)</h2>
-    <p>Ojcze nasz, któryś jest w niebie, święć się imię Twoje, przyjdź królestwo Twoje, bądź wola Twoja, jako w niebie tak i na ziemi. Chleba naszego powszedniego daj nam dzisiaj. I odpuść nam nasze winy, jako i my odpuszczamy naszym winowajcom. I nie wódź nas na pokuszenie, ale nas zbaw od złego. Amen.</p>
+<main class="container">
+    <aside class="sidebar" id="toc">
+        <h3>Spis treści</h3>
+        <ul>
+            <li><a href="#mk1">Modlitwa Pańska (Ojcze nasz)</a></li>
+            <li><a href="#mk2">Pozdrowienie Anielskie (Zdrowaś Maryjo)</a></li>
+            <li><a href="#mk3">Skład Apostolski (Wierzę w Boga)</a></li>
+            <li><a href="#mk4">Dziesięć przykazań Bożych</a></li>
+            <li><a href="#mk5">Główne prawdy wiary</a></li>
+            <li><a href="#mk6">Siedem Sakramentów Świętych</a></li>
+            <li><a href="#mk7">Siedem grzechów głównych</a></li>
+            <li><a href="#mk8">Cztery cnoty główne (kardynalne)</a></li>
+            <li><a href="#mk9">Pięć warunków dobrej spowiedzi</a></li>
+            <li><a href="#mk10">Dwa przykazania miłości</a></li>
+            <li><a href="#mk11">Trzy cnoty główne (teologalne)</a></li>
+            <li><a href="#mk12">Siedem cnót głównych</a></li>
+            <li><a href="#mk13">Najważniejsze dobre uczynki</a></li>
+            <li><a href="#mk14">Uczynki miłosierdzia względem duszy</a></li>
+            <li><a href="#mk15">Uczynki miłosierdzia względem ciała</a></li>
+            <li><a href="#mk16">Ostateczne rzeczy człowieka</a></li>
+            <li><a href="#mk17">Siedem grzechów przeciw Duchowi Świętemu</a></li>
+            <li><a href="#mk18">Grzechy wołające o pomstę do nieba</a></li>
+            <li><a href="#mk19">Grzechy cudze</a></li>
+            <li><a href="#mk20">Doskonałość chrześcijańska</a></li>
+            <li><a href="#mk21">Rady ewangeliczne</a></li>
+            <li><a href="#mk22">Owoce łaski Ducha Świętego</a></li>
+            <li><a href="#mk23">Siedem darów Ducha Świętego</a></li>
+            <li><a href="#mk24">Pięć przykazań kościelnych</a></li>
+            <li><a href="#mk25">Skutki sakramentu pokuty</a></li>
+            <li><a href="#mk26">Błogosławieństwa ewangeliczne</a></li>
+            <li><a href="#mk27">Stacje drogi krzyżowej</a></li>
+            <li>
+                <a href="#mk28">Tajemnice Różańca Świętego</a>
+                <ul>
+                    <li><a href="#mk28a">Tajemnice radosne</a></li>
+                    <li><a href="#mk28b">Tajemnice światła</a></li>
+                    <li><a href="#mk28c">Tajemnice bolesne</a></li>
+                    <li><a href="#mk28d">Tajemnice chwalebne</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
 
-    <h2>Pozdrowienie Anielskie (Zdrowaś Maryjo)</h2>
-    <p>Zdrowaś Maryjo, łaski pełna, Pan z Tobą, błogosławionaś Ty między niewiastami i błogosławiony owoc żywota Twojego Jezus. Święta Maryjo, Matko Boża, módl się za nami grzesznymi teraz i w godzinę śmierci naszej. Amen.</p>
+    <div class="content">
+        <h1>"Mały katechizm" podstawowe prawdy katechizmowe</h1>
 
-    <h2>Skład Apostolski (Wierzę w Boga)</h2>
-    <p>Wierzę w Boga Ojca wszechmogącego, Stworzyciela nieba i ziemi. I w Jezusa Chrystusa, Syna Jego jedynego, Pana naszego, który się począł z Ducha Świętego; narodził się z Maryi Panny; umęczon pod Ponckim Piłatem, ukrzyżowan, umarł i pogrzebion; zstąpił do piekieł; trzeciego dnia zmartwychwstał; wstąpił na niebiosa; siedzi po prawicy Boga Ojca wszechmogącego; stamtąd przyjdzie sądzić żywych i umarłych. Wierzę w Ducha Świętego, święty Kościół powszechny, Świętych obcowanie, grzechów odpuszczenie, ciała zmartwychwstanie, żywot wieczny. Amen.</p>
+                <h2 id="mk1">Modlitwa Pańska (Ojcze nasz)</h2>
+        <p>Ojcze nasz, któryś jest w niebie, święć się imię Twoje, przyjdź królestwo Twoje, bądź wola Twoja, jako w niebie tak i na ziemi. Chleba naszego powszedniego daj nam dzisiaj. I odpuść nam nasze winy, jako i my odpuszczamy naszym winowajcom. I nie wódź nas na pokuszenie, ale nas zbaw od złego. Amen.</p>
 
-    <h2>Dziesięć przykazań Bożych</h2>
-    <p>Jam jest Pan Bóg twój, którym cię wywiódł z ziemi egipskiej z domu niewoli.</p>
+        <h2 id="mk2">Pozdrowienie Anielskie (Zdrowaś Maryjo)</h2>
+        <p>Zdrowaś Maryjo, łaski pełna, Pan z Tobą, błogosławionaś Ty między niewiastami i błogosławiony owoc żywota Twojego Jezus. Święta Maryjo, Matko Boża, módl się za nami grzesznymi teraz i w godzinę śmierci naszej. Amen.</p>
+
+        <h2 id="mk3">Skład Apostolski (Wierzę w Boga)</h2>
+        <p>Wierzę w Boga Ojca wszechmogącego, Stworzyciela nieba i ziemi. I w Jezusa Chrystusa, Syna Jego jedynego, Pana naszego, który się począł z Ducha Świętego; narodził się z Maryi Panny; umęczon pod Ponckim Piłatem, ukrzyżowan, umarł i pogrzebion; zstąpił do piekieł; trzeciego dnia zmartwychwstał; wstąpił na niebiosa; siedzi po prawicy Boga Ojca wszechmogącego; stamtąd przyjdzie sądzić żywych i umarłych. Wierzę w Ducha Świętego, święty Kościół powszechny, Świętych obcowanie, grzechów odpuszczenie, ciała zmartwychwstanie, żywot wieczny. Amen.</p>
+
+        <h2 id="mk4">Dziesięć przykazań Bożych</h2>
+        <p>Jam jest Pan Bóg twój, którym cię wywiódł z ziemi egipskiej z domu niewoli.</p>
+        <ol type="I">
+            <li>Nie będziesz miał bogów cudzych przede mną.</li>
+            <li>Nie będziesz brał Imienia Pana Boga swego nadaremno.</li>
+            <li>Pamiętaj abyś dzień święty święcił.</li>
+            <li>Czcij ojca swego i matkę swoją.</li>
+            <li>Nie zabijaj.</li>
+            <li>Nie cudzołóż.</li>
+            <li>Nie kradnij.</li>
+            <li>Nie mów fałszywego świadectwa przeciw bliźniemu swemu.</li>
+            <li>Nie pożądaj żony bliźniego swego.</li>
+            <li>Ani żadnej rzeczy, która jego jest.</li>
+        </ol>
+
+        <h2 id="mk5">Główne prawdy wiary</h2>
+        <ol>
+            <li>Jest jeden Bóg.</li>
+            <li>Bóg jest sędzią sprawiedliwym, który za dobre wynagradza i za złe karze.</li>
+            <li>Są trzy Osoby Boskie: Bóg Ojciec, Syn Boży i Duch Święty.</li>
+            <li>Syn Boży stał się człowiekiem i umarł na krzyżu dla naszego zbawienia.</li>
+            <li>Dusza ludzka jest nieśmiertelna.</li>
+            <li>Łaska Boża jest do zbawienia koniecznie potrzebna.</li>
+        </ol>
+
+        <h2 id="mk6">Siedem Sakramentów Świętych</h2>
+        <ol>
+            <li>Chrzest</li>
+            <li>Bierzmowanie</li>
+            <li>Najświętszy Sakrament</li>
+            <li>Pokuta</li>
+            <li>Namaszczenie chorych</li>
+            <li>Kapłaństwo</li>
+            <li>Małżeństwo</li>
+        </ol>
+
+        <h2 id="mk7">Siedem grzechów głównych</h2>
+        <ol>
+            <li>Pycha</li>
+            <li>Chciwość</li>
+            <li>Nieczystość</li>
+            <li>Zazdrość</li>
+            <li>Nieumiarkowanie w jedzeniu i w piciu</li>
+            <li>Gniew</li>
+            <li>Lenistwo</li>
+        </ol>
+
+        <h2 id="mk8">Cztery cnoty główne (kardynalne)</h2>
+        <ol>
+            <li>Roztropność</li>
+            <li>Sprawiedliwość</li>
+            <li>Wstrzemięźliwość</li>
+            <li>Męstwo</li>
+        </ol>
+
+        <h2 id="mk9">Pięć warunków dobrej spowiedzi</h2>
+    <ol>
+        <li>Rachunek sumienia.</li>
+        <li>Żal za grzechy.</li>
+        <li>Mocne postanowienie poprawy.</li>
+        <li>Spowiedź.</li>
+        <li>Zadośćuczynienie Panu Bogu i bliźniemu.</li>
+    </ol>
+
+    <h2 id="mk10">Dwa przykazania miłości</h2>
     <ol type="I">
-        <li>Nie będziesz miał bogów cudzych przede mną.</li>
-        <li>Nie będziesz brał Imienia Pana Boga swego nadaremno.</li>
-        <li>Pamiętaj abyś dzień święty święcił.</li>
-        <li>Czcij ojca swego i matkę swoją.</li>
-        <li>Nie zabijaj.</li>
-        <li>Nie cudzołóż.</li>
-        <li>Nie kradnij.</li>
-        <li>Nie mów fałszywego świadectwa przeciw bliźniemu swemu.</li>
-        <li>Nie pożądaj żony bliźniego swego.</li>
-        <li>Ani żadnej rzeczy, która jego jest.</li>
+        <li>Będziesz miłował Pana Boga swego z całego serca swego, z całej duszy swojej i ze wszystkich sił swoich.</li>
+        <li>A bliźniego swego jak siebie samego.</li>
     </ol>
 
-    <h2>Główne prawdy wiary</h2>
+    <h2 id="mk11">Trzy cnoty główne (teologalne)</h2>
     <ol>
-        <li>Jest jeden Bóg.</li>
-        <li>Bóg jest sędzią sprawiedliwym, który za dobre wynagradza i za złe karze.</li>
-        <li>Są trzy Osoby Boskie: Bóg Ojciec, Syn Boży i Duch Święty.</li>
-        <li>Syn Boży stał się człowiekiem i umarł na krzyżu dla naszego zbawienia.</li>
-        <li>Dusza ludzka jest nieśmiertelna.</li>
-        <li>Łaska Boża jest do zbawienia koniecznie potrzebna.</li>
+        <li>Wiara</li>
+        <li>Nadzieja</li>
+        <li>Miłość</li>
     </ol>
 
-    <h2>Siedem Sakramentów Świętych</h2>
+    <h2 id="mk12">Siedem cnót głównych</h2>
     <ol>
-        <li>Chrzest</li>
-        <li>Bierzmowanie</li>
-        <li>Najświętszy Sakrament</li>
-        <li>Pokuta</li>
-        <li>Namaszczenie chorych</li>
-        <li>Kapłaństwo</li>
-        <li>Małżeństwo</li>
+        <li>Pokora</li>
+        <li>Hojność</li>
+        <li>Czystość</li>
+        <li>Miłość</li>
+        <li>Umiarkowanie</li>
+        <li>Cierpliwość</li>
+        <li>Gorliwość i pracowitość</li>
     </ol>
 
-    <h2>Siedem grzechów głównych</h2>
+    <h2 id="mk13">Najważniejsze dobre uczynki</h2>
     <ol>
-        <li>Pycha</li>
-        <li>Chciwość</li>
-        <li>Nieczystość</li>
-        <li>Zazdrość</li>
-        <li>Nieumiarkowanie w jedzeniu i w piciu</li>
-        <li>Gniew</li>
-        <li>Lenistwo</li>
+        <li>Modlitwa.</li>
+        <li>Post.</li>
+        <li>Jałmużna</li>
     </ol>
 
-    <h2>Cztery cnoty główne (kardynalne)</h2>
+    <h2 id="mk14">Uczynki miłosierdzia względem duszy</h2>
     <ol>
-        <li>Roztropność</li>
-        <li>Sprawiedliwość</li>
+        <li>Grzeszących upominać.</li>
+        <li>Nieumiejętnych pouczać.</li>
+        <li>Wątpiącym dobrze radzić.</li>
+        <li>Strapionych pocieszać.</li>
+        <li>Krzywdy cierpliwie znosić.</li>
+        <li>Urazy chętnie darować.</li>
+        <li>Modlić się za żywych i umarłych.</li>
+    </ol>
+
+    <h2 id="mk15">Uczynki miłosierdzia względem ciała</h2>
+    <ol>
+        <li>Głodnych nakarmić.</li>
+        <li>Spragnionych napoić.</li>
+        <li>Nagich przyodziać.</li>
+        <li>Podróżnych w dom przyjąć.</li>
+        <li>Więźniów pocieszać.</li>
+        <li>Chorych nawiedzać.</li>
+        <li>Umarłych pogrzebać.</li>
+    </ol>
+
+    <h2 id="mk16">Ostateczne rzeczy człowieka</h2>
+    <ol>
+        <li>Śmierć</li>
+        <li>Sąd Boży</li>
+        <li>Niebo albo piekło.</li>
+    </ol>
+
+    <h2 id="mk17">Siedem grzechów przeciw Duchowi Świętemu</h2>
+    <ol>
+        <li>Grzeszyć zuchwale w nadziei miłosierdzia Bożego.</li>
+        <li>Rozpaczać albo wątpić w łaskę Bożą.</li>
+        <li>Uznawanej prawdzie chrześcijańskiej sprzeciwiać się.</li>
+        <li>Nie życzyć lub zazdrościć Bliźniemu łaski Bożej.</li>
+        <li>Na zbawienne natchnienia mieć zatwardziałe serce.</li>
+        <li>Pokutę i nawrócenie aż do śmierci odkładać.</li>
+    </ol>
+
+    <h2 id="mk18">Grzechy wołające o pomstę do nieba</h2>
+    <ol>
+        <li>Umyślne zabójstwo.</li>
+        <li>Grzech sodomski.</li>
+        <li>Krzywdzenie ubogich, wdów i sierot.</li>
+        <li>Zatrzymywanie zapłaty pracownikom.</li>
+    </ol>
+
+    <h2 id="mk19">Grzechy cudze</h2>
+    <ol>
+        <li>Namawiać do grzechu.</li>
+        <li>Grzech nakazywać.</li>
+        <li>Na grzech drugich zezwalać.</li>
+        <li>Innych do grzechu pobudzać.</li>
+        <li>Na grzech drugich milczeć.</li>
+        <li>Grzech drugich pochwalać.</li>
+        <li>Grzechu nie karać.</li>
+        <li>Do grzechu pomagać.</li>
+        <li>Grzechu innych bronić.</li>
+    </ol>
+
+    <h2 id="mk20">Doskonałość chrześcijańska</h2>
+    <ol>
+        <li>Unikaj złego</li>
+        <li>Czyń dobrze</li>
+        <li>Naśladuj Chrystusa</li>
+    </ol>
+
+    <h2 id="mk21">Rady ewangeliczne</h2>
+    <ol>
+        <li>Dobrowolne ubóstwo</li>
+        <li>Dozgonna czystość</li>
+        <li>Zupełne posłuszeństwo dla miłości Jezusa Chrystusa</li>
+    </ol>
+
+    <h2 id="mk22">Owoce łaski Ducha Świętego</h2>
+    <ol>
+        <li>Miłość</li>
+        <li>Radość</li>
+        <li>Pokój</li>
+        <li>Cierpliwość</li>
+        <li>Łaskawość</li>
+        <li>Dobroć</li>
+        <li>Uprzejmość</li>
+        <li>Cichość</li>
+        <li>Wierność</li>
+        <li>Skromność</li>
         <li>Wstrzemięźliwość</li>
-        <li>Męstwo</li>
+        <li>Czystość</li>
     </ol>
 
-    <h2>Pięć warunków dobrej spowiedzi</h2>
-<ol>
-    <li>Rachunek sumienia.</li>
-    <li>Żal za grzechy.</li>
-    <li>Mocne postanowienie poprawy.</li>
-    <li>Spowiedź.</li>
-    <li>Zadośćuczynienie Panu Bogu i bliźniemu.</li>
-</ol>
+    <h2 id="mk23">Siedem darów Ducha Świętego</h2>
+    <ol>
+        <li>Dar mądrości.</li>
+        <li>Dar rozumu.</li>
+        <li>Dar rady.</li>
+        <li>Dar męstwa.</li>
+        <li>Dar umiejętności.</li>
+        <li>Dar pobożności.</li>
+        <li>Dar bojaźni Bożej.</li>
+    </ol>
 
-<h2>Dwa przykazania miłości</h2>
-<ol type="I">
-    <li>Będziesz miłował Pana Boga swego z całego serca swego, z całej duszy swojej i ze wszystkich sił swoich.</li>
-    <li>A bliźniego swego jak siebie samego.</li>
-</ol>
+    <h2 id="mk24">Pięć przykazań kościelnych</h2>
+    <ol>
+        <li>W niedzielę i święta nakazane uczestniczyć we Mszy świętej i powstrzymać się od prac niekoniecznych.</li>
+        <li>Przynajmniej raz w roku przystąpić do sakramentu pokuty.</li>
+        <li>Przynajmniej raz w roku, w okresie wielkanocnym, przyjąć Komunię Świętą.</li>
+        <li>Zachowywać nakazane posty i wstrzemięźliwość od pokarmów mięsnych, a w czasie Wielkiego Postu powstrzymywać się od udziału w zabawach.</li>
+        <li>Troszczyć się o potrzeby wspólnoty Kościoła.</li>
+    </ol>
 
-<h2>Trzy cnoty główne (teologalne)</h2>
-<ol>
-    <li>Wiara</li>
-    <li>Nadzieja</li>
-    <li>Miłość</li>
-</ol>
+    <h2 id="mk25">Skutki sakramentu pokuty</h2>
+    <ol>
+        <li>Pojednanie z Bogiem.</li>
+        <li>Pojednanie z człowiekiem.</li>
+        <li>Przywrócenie wewnętrznej harmonii – pokój serca.</li>
+        <li>Stan łaski uświęcającej.</li>
+        <li>Większa siła do walki ze swoimi słabościami i grzechem.</li>
+    </ol>
 
-<h2>Siedem cnót głównych</h2>
-<ol>
-    <li>Pokora</li>
-    <li>Hojność</li>
-    <li>Czystość</li>
-    <li>Miłość</li>
-    <li>Umiarkowanie</li>
-    <li>Cierpliwość</li>
-    <li>Gorliwość i pracowitość</li>
-</ol>
+    <h2 id="mk26">Błogosławieństwa ewangeliczne</h2>
+    <ol>
+        <li>Błogosławieni ubodzy w duchu, albowiem do nich należy królestwo niebieskie.</li>
+        <li>Błogosławieni cisi, albowiem oni na własność posiądą ziemię.</li>
+        <li>Błogosławieni, którzy płaczą, albowiem oni będą pocieszeni.</li>
+        <li>Błogosławieni, którzy łakną i pragną sprawiedliwości, albowiem oni będą nasyceni.</li>
+        <li>Błogosławieni miłosierni, albowiem oni miłosierdzia dostąpią.</li>
+        <li>Błogosławieni czystego serca, albowiem oni Boga oglądać będą.</li>
+        <li>Błogosławieni, którzy wprowadzają pokój, albowiem oni będą nazwani synami Bożymi.</li>
+        <li>Błogosławieni jesteście, którzy cierpią prześladowanie dla sprawiedliwości, albowiem do nich należy królestwo niebieskie.</li>
+    </ol>
 
-<h2>Najważniejsze dobre uczynki</h2>
-<ol>
-    <li>Modlitwa.</li>
-    <li>Post.</li>
-    <li>Jałmużna</li>
-</ol>
+    <p>
+    Błogosławieni jesteście, gdy ludzie wam urągają i prześladują was, i gdy mówią kłamliwie wszystko złe na was z Mego powodu.  
+    Cieszcie się i radujcie, albowiem wielka jest wasza nagroda w niebie.
+    </p>
 
-<h2>Uczynki miłosierdzia względem duszy</h2>
-<ol>
-    <li>Grzeszących upominać.</li>
-    <li>Nieumiejętnych pouczać.</li>
-    <li>Wątpiącym dobrze radzić.</li>
-    <li>Strapionych pocieszać.</li>
-    <li>Krzywdy cierpliwie znosić.</li>
-    <li>Urazy chętnie darować.</li>
-    <li>Modlić się za żywych i umarłych.</li>
-</ol>
+    <h2 id="mk27">Stacje drogi krzyżowej</h2>
+    <ol type="I">
+        <li>Pan Jezus na śmierć skazany</li>
+        <li>Pan Jezus bierze krzyż na ramiona swoje</li>
+        <li>Pan Jezus pierwszy raz upada pod krzyżem</li>
+        <li>Pan Jezus spotyka Matkę swoją</li>
+        <li>Szymon Cyrenejczyk pomaga nieść krzyż Panu Jezusowi</li>
+        <li>Święta Weronika ociera twarz Panu Jezusowi</li>
+        <li>Pan Jezus drugi raz pod krzyżem upada</li>
+        <li>Pan Jezus pociesza płaczące niewiasty</li>
+        <li>Pan Jezus trzeci raz pod krzyżem upada</li>
+        <li>Pan Jezus z szat obnażony, octem z mirrą i żółcią napojony</li>
+        <li>Pan Jezus okrutnie do krzyża przybity</li>
+        <li>Pan Jezus umiera na krzyżu</li>
+        <li>Pan Jezus z krzyża zdjęty na łonie Najświętszej Matki swojej złożony</li>
+        <li>Pan Jezus do grobu złożony</li>
+        <li>Pan Jezus zmartwychwstaje</li>
+        <li>Pan Jezus ukazuje się Apostołom / Spotkanie z niewiernym Tomaszem</li>
+        <li>Pan Jezus ukazuje się w Galilei / Rozesłanie apostołów</li>
+        <li>Wniebowstąpienie</li>
+    </ol>
 
-<h2>Uczynki miłosierdzia względem ciała</h2>
-<ol>
-    <li>Głodnych nakarmić.</li>
-    <li>Spragnionych napoić.</li>
-    <li>Nagich przyodziać.</li>
-    <li>Podróżnych w dom przyjąć.</li>
-    <li>Więźniów pocieszać.</li>
-    <li>Chorych nawiedzać.</li>
-    <li>Umarłych pogrzebać.</li>
-</ol>
+    <h2 id="mk28">Tajemnice Różańca Świętego</h2>
+        <h3 id="mk28a">Tajemnice radosne (poniedziałki i soboty)</h3>
+            <ol>
+                <li>Zwiastowanie Najświętszej Maryi Pannie</li>
+                <li>Nawiedzenie świętej Elżbiety</li>
+                <li>Narodzenie Pana Jezusa</li>
+                <li>Ofiarowanie Pana Jezusa w świątyni</li>
+                <li>Znalezienie Pana Jezusa w świątyni</li>
+            </ol>
 
-<h2>Ostateczne rzeczy człowieka</h2>
-<ol>
-    <li>Śmierć</li>
-    <li>Sąd Boży</li>
-    <li>Niebo albo piekło.</li>
-</ol>
+        <h3 id="mk28b">Tajemnice światła (czwartki)</h3>
+            <ol>
+                <li>Chrzest Pana Jezusa w Jordanie</li>
+                <li>Objawienie się Pana Jezusa na weselu w Kanie Galilejskiej</li>
+                <li>Głoszenie Królestwa Bożego i wzywanie do nawrócenia</li>
+                <li>Przemienienie na górze Tabor</li>
+                <li>Ustanowienie Eucharystii</li>
+            </ol>
 
-<h2>Siedem grzechów przeciw Duchowi Świętemu</h2>
-<ol>
-    <li>Grzeszyć zuchwale w nadziei miłosierdzia Bożego.</li>
-    <li>Rozpaczać albo wątpić w łaskę Bożą.</li>
-    <li>Uznawanej prawdzie chrześcijańskiej sprzeciwiać się.</li>
-    <li>Nie życzyć lub zazdrościć Bliźniemu łaski Bożej.</li>
-    <li>Na zbawienne natchnienia mieć zatwardziałe serce.</li>
-    <li>Pokutę i nawrócenie aż do śmierci odkładać.</li>
-</ol>
+        <h3 id="mk28c">Tajemnice bolesne (wtorki i piątki)</h3>
+            <ol>
+                <li>Modlitwa Pana Jezusa w Ogrójcu</li>
+                <li>Biczowanie Pana Jezusa</li>
+                <li>Cierniem ukoronowanie Pana Jezusa</li>
+                <li>Dźwiganie krzyża</li>
+                <li>Ukrzyżowanie i śmierć Pana Jezusa</li>
+            </ol>
 
-<h2>Grzechy wołające o pomstę do nieba</h2>
-<ol>
-    <li>Umyślne zabójstwo.</li>
-    <li>Grzech sodomski.</li>
-    <li>Krzywdzenie ubogich, wdów i sierot.</li>
-    <li>Zatrzymywanie zapłaty pracownikom.</li>
-</ol>
+        <h3 id="mk28d">Tajemnice chwalebne (środy i niedziele)</h3>
+            <ol>
+                <li>Zmartwychwstanie Pana Jezusa</li>
+                <li>Wniebowstąpienie Pana Jezusa</li>
+                <li>Zesłanie Ducha Świętego</li>
+                <li>Wniebowzięcie Najświętszej Maryi Panny</li>
+                <li>Ukoronowanie Najświętszej Maryi Panny na Królową nieba i ziemi</li>
+            </ol>
+    </div>
 
-<h2>Grzechy cudze</h2>
-<ol>
-    <li>Namawiać do grzechu.</li>
-    <li>Grzech nakazywać.</li>
-    <li>Na grzech drugich zezwalać.</li>
-    <li>Innych do grzechu pobudzać.</li>
-    <li>Na grzech drugich milczeć.</li>
-    <li>Grzech drugich pochwalać.</li>
-    <li>Grzechu nie karać.</li>
-    <li>Do grzechu pomagać.</li>
-    <li>Grzechu innych bronić.</li>
-</ol>
-
-<h2>Doskonałość chrześcijańska</h2>
-<ol>
-    <li>Unikaj złego</li>
-    <li>Czyń dobrze</li>
-    <li>Naśladuj Chrystusa</li>
-</ol>
-
-<h2>Rady ewangeliczne</h2>
-<ol>
-    <li>Dobrowolne ubóstwo</li>
-    <li>Dozgonna czystość</li>
-    <li>Zupełne posłuszeństwo dla miłości Jezusa Chrystusa</li>
-</ol>
-
-<h2>Owoce łaski Ducha Świętego</h2>
-<ol>
-    <li>Miłość</li>
-    <li>Radość</li>
-    <li>Pokój</li>
-    <li>Cierpliwość</li>
-    <li>Łaskawość</li>
-    <li>Dobroć</li>
-    <li>Uprzejmość</li>
-    <li>Cichość</li>
-    <li>Wierność</li>
-    <li>Skromność</li>
-    <li>Wstrzemięźliwość</li>
-    <li>Czystość</li>
-</ol>
-
-<h2>Siedem darów Ducha Świętego</h2>
-<ol>
-    <li>Dar mądrości.</li>
-    <li>Dar rozumu.</li>
-    <li>Dar rady.</li>
-    <li>Dar męstwa.</li>
-    <li>Dar umiejętności.</li>
-    <li>Dar pobożności.</li>
-    <li>Dar bojaźni Bożej.</li>
-</ol>
-
-<h2>Pięć przykazań kościelnych</h2>
-<ol>
-    <li>W niedzielę i święta nakazane uczestniczyć we Mszy świętej i powstrzymać się od prac niekoniecznych.</li>
-    <li>Przynajmniej raz w roku przystąpić do sakramentu pokuty.</li>
-    <li>Przynajmniej raz w roku, w okresie wielkanocnym, przyjąć Komunię Świętą.</li>
-    <li>Zachowywać nakazane posty i wstrzemięźliwość od pokarmów mięsnych, a w czasie Wielkiego Postu powstrzymywać się od udziału w zabawach.</li>
-    <li>Troszczyć się o potrzeby wspólnoty Kościoła.</li>
-</ol>
-
-<h2>Skutki sakramentu pokuty</h2>
-<ol>
-    <li>Pojednanie z Bogiem.</li>
-    <li>Pojednanie z człowiekiem.</li>
-    <li>Przywrócenie wewnętrznej harmonii – pokój serca.</li>
-    <li>Stan łaski uświęcającej.</li>
-    <li>Większa siła do walki ze swoimi słabościami i grzechem.</li>
-</ol>
-
-<h2>Błogosławieństwa ewangeliczne</h2>
-<ol>
-    <li>Błogosławieni ubodzy w duchu, albowiem do nich należy królestwo niebieskie.</li>
-    <li>Błogosławieni cisi, albowiem oni na własność posiądą ziemię.</li>
-    <li>Błogosławieni, którzy płaczą, albowiem oni będą pocieszeni.</li>
-    <li>Błogosławieni, którzy łakną i pragną sprawiedliwości, albowiem oni będą nasyceni.</li>
-    <li>Błogosławieni miłosierni, albowiem oni miłosierdzia dostąpią.</li>
-    <li>Błogosławieni czystego serca, albowiem oni Boga oglądać będą.</li>
-    <li>Błogosławieni, którzy wprowadzają pokój, albowiem oni będą nazwani synami Bożymi.</li>
-    <li>Błogosławieni jesteście, którzy cierpią prześladowanie dla sprawiedliwości, albowiem do nich należy królestwo niebieskie.</li>
-</ol>
-
-<p>
-Błogosławieni jesteście, gdy ludzie wam urągają i prześladują was, i gdy mówią kłamliwie wszystko złe na was z Mego powodu.  
-Cieszcie się i radujcie, albowiem wielka jest wasza nagroda w niebie.
-</p>
-
-<h2>Stacje drogi krzyżowej</h2>
-<ol type="I">
-    <li>Pan Jezus na śmierć skazany</li>
-    <li>Pan Jezus bierze krzyż na ramiona swoje</li>
-    <li>Pan Jezus pierwszy raz upada pod krzyżem</li>
-    <li>Pan Jezus spotyka Matkę swoją</li>
-    <li>Szymon Cyrenejczyk pomaga nieść krzyż Panu Jezusowi</li>
-    <li>Święta Weronika ociera twarz Panu Jezusowi</li>
-    <li>Pan Jezus drugi raz pod krzyżem upada</li>
-    <li>Pan Jezus pociesza płaczące niewiasty</li>
-    <li>Pan Jezus trzeci raz pod krzyżem upada</li>
-    <li>Pan Jezus z szat obnażony, octem z mirrą i żółcią napojony</li>
-    <li>Pan Jezus okrutnie do krzyża przybity</li>
-    <li>Pan Jezus umiera na krzyżu</li>
-    <li>Pan Jezus z krzyża zdjęty na łonie Najświętszej Matki swojej złożony</li>
-    <li>Pan Jezus do grobu złożony</li>
-    <li>Pan Jezus zmartwychwstaje</li>
-    <li>Pan Jezus ukazuje się Apostołom / Spotkanie z niewiernym Tomaszem</li>
-    <li>Pan Jezus ukazuje się w Galilei / Rozesłanie apostołów</li>
-    <li>Wniebowstąpienie</li>
-</ol>
-
-<h2>Tajemnice Różańca Świętego</h2>
-    <h3>Tajemnice radosne (poniedziałki i soboty)</h3>
-        <ol>
-            <li>Zwiastowanie Najświętszej Maryi Pannie</li>
-            <li>Nawiedzenie świętej Elżbiety</li>
-            <li>Narodzenie Pana Jezusa</li>
-            <li>Ofiarowanie Pana Jezusa w świątyni</li>
-            <li>Znalezienie Pana Jezusa w świątyni</li>
-        </ol>
-
-    <h3>Tajemnice światła (czwartki)</h3>
-        <ol>
-            <li>Chrzest Pana Jezusa w Jordanie</li>
-            <li>Objawienie się Pana Jezusa na weselu w Kanie Galilejskiej</li>
-            <li>Głoszenie Królestwa Bożego i wzywanie do nawrócenia</li>
-            <li>Przemienienie na górze Tabor</li>
-            <li>Ustanowienie Eucharystii</li>
-        </ol>
-
-    <h3>Tajemnice bolesne (wtorki i piątki)</h3>
-        <ol>
-            <li>Modlitwa Pana Jezusa w Ogrójcu</li>
-            <li>Biczowanie Pana Jezusa</li>
-            <li>Cierniem ukoronowanie Pana Jezusa</li>
-            <li>Dźwiganie krzyża</li>
-            <li>Ukrzyżowanie i śmierć Pana Jezusa</li>
-        </ol>
-
-    <h3>Tajemnice chwalebne (środy i niedziele)</h3>
-        <ol>
-            <li>Zmartwychwstanie Pana Jezusa</li>
-            <li>Wniebowstąpienie Pana Jezusa</li>
-            <li>Zesłanie Ducha Świętego</li>
-            <li>Wniebowzięcie Najświętszej Maryi Panny</li>
-            <li>Ukoronowanie Najświętszej Maryi Panny na Królową nieba i ziemi</li>
-        </ol>
-
-<h2>Wiara, nadzieja, miłość (Akty cnót Boskich)</h2>
-    <h3>Akt wiary</h3>
-        <p>Wierzę w Ciebie, Boże żywy,<br>
-        W Trójcy jedyny, prawdziwy,<br>
-        Wierzę coś objawił, Boże,<br>
-        Twe słowo mylić nie może</p>
-
-    <h3>Akt nadziei</h3>
-        <p>Ufam Tobie, boś Ty wierny,<br>
-        Wszechmocny i miłosierny,<br>
-        Dasz mi grzechów odpuszczenie,<br>
-        Łaskę i wieczne zbawienie.</p>
-
-    <h3>Akt miłości</h3>
-        <p>Boże, choć Cię nie pojmuję,<br>
-        Jednak nad wszystko miłuję,<br>
-        Nad wszystko, co jest stworzone,<br>
-        Boś Ty Dobro nieskończone.</p>
-
-    <h3>Akt żalu</h3>
-        <p>Ach, żałuję za me złości,<br>
-        Jedynie dla Twej miłości,<br>
-        Bądź miłościw mnie grzesznemu,<br>
-        Dla Ciebie odpuszczam bliźniemu.</p>
-
-<h2>Wyznanie wiary Credo – (Wierzę w jednego Boga)</h2>
-<p>
-Wierzę w jednego Boga, Ojca Wszechmogącego, Stworzyciela nieba i ziemi, wszystkich rzeczy widzialnych i niewidzialnych.  <br>
-I w jednego Pana Jezusa Chrystusa, Syna Bożego Jednorodzonego, który z Ojca jest zrodzony przed wszystkimi wiekami. <br> 
-Bóg z Boga, Światłość ze Światłości, Bóg prawdziwy z Boga prawdziwego.  <br>
-Zrodzony a nie stworzony, współistotny Ojcu, a przez Niego wszystko się stało.  <br>
-On to dla nas ludzi i dla naszego zbawienia zstąpił z nieba.  <br>
-I za sprawą Ducha Świętego przyjął ciało z Maryi Dziewicy i stał się człowiekiem.  <br>
-Ukrzyżowany również za nas, pod Poncjuszem Piłatem został umęczony i pogrzebany. <br> 
-I zmartwychwstał dnia trzeciego, jak oznajmia Pismo.  <br>
-I wstąpił do nieba; siedzi po prawicy Ojca.  <br>
-I powtórnie przyjdzie w chwale sądzić żywych i umarłych, a Królestwu Jego nie będzie końca.  <br>
-Wierzę w Ducha Świętego, Pana i Ożywiciela, który od Ojca i Syna pochodzi.  <br>
-Który z Ojcem i Synem wspólnie odbiera uwielbienie i chwałę, który mówił przez Proroków.  <br>
-Wierzę w jeden, Święty, powszechny i apostolski Kościół.  <br>
-Wyznaję jeden chrzest na odpuszczenie grzechów.  <br>
-I oczekuję wskrzeszenia umarłych.  <br>
-I życia wiecznego w przyszłym świecie. Amen.
-</p>
-
-<h2>Spowiedź powszechna</h2>
-<p>
-Spowiadam się Bogu wszechmogącemu i wam bracia i siostry, że bardzo zgrzeszyłem myślą, mową, uczynkiem i zaniedbaniem;  
-moja wina, moja wina, moja bardzo wielka wina.  
-Przeto błagam Najświętszą Maryję zawsze dziewicę, wszystkich Aniołów i Świętych,  
-i was bracia i siostry, o modlitwę za mnie do Pana Boga naszego.
-</p>
-
-    </section>
-</div>
+</main>
+</section>
     <section class="bibliografia">
-  <h2>Bibliografia</h2>
-  <ol>
-    <li>Rosłanowski, J. Katechizm kandydata przygotowującego się do Sakramentu Bierzmowania. Stary Cykarzew: 2009.</li>
-    <li>Droga do nieba. Modlitewnik opracowany przez kapłanów diecezji opolskiej i gliwickiej. Wyd. LX. Opole: Wydawnictwo Św. Krzyża, 1993. ISBN 83-85015-10-0</li>
-  </ol>
+    <h2>Bibliografia</h2>
+    <ol>
+        <li>Rosłanowski, J. Katechizm kandydata przygotowującego się do Sakramentu Bierzmowania. Stary Cykarzew: 2009.</li>
+    </ol>
     </section>
 </body>
 </html>
