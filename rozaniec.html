@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Modlitwa różańcowa - Bóg i sens</title>
+    <title>Pieśni do Ducha Świętego - Bóg i sens</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,6 @@
   <div class="marquee-content">
     Strona w budowie! Będą nowe treści i uzupełnione źródła
   </div>
-
 </div>
 
 
@@ -45,7 +44,6 @@ function toggleMenu() {
 }
 </script>
 
-
 </nav>
 <div id="clock-container">
   <div id="clock"></div>
@@ -72,9 +70,35 @@ setInterval(updateClock, 1000);
 updateClock();
 </script>
 
-    <section>
+<section>
+<!---sidebar-->
+<script>
+document.querySelectorAll('#toc a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault(); // blokuje standardowe skakanie
+    const target = document.querySelector(link.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' }); // płynne przewijanie
+  });
+});
+</script>
+
+<main class="container">
+    <aside class="sidebar" id="toc">
+        <h3>Spis treści</h3>
+        <ul>
+            <li><a href="#tr">Tajemnice Różańca Świętego</a></li>
+            <li><a href="#pm">Przebieg modlitwy na Jasnej Górze</a></li>
+            <li><a href="#wkmm">Witaj Królowo, Matko Miłosierdzia</a></li>
+            <li><a href="#r">Różaniec</a></li>
+            <li><a href="#ll">Litania Loretańska</a></li>
+            <li><a href="#pto">Pod Twoją Obronę</a></li>
+            <li><a href="#msb">Modlitwa świętego Bernarda</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
         <h1>Modlitwa różańcowa</h1>
-        <h2>Tajemnice Różańca Świętego</h2>
+        <h2 id="tr">Tajemnice Różańca Świętego</h2>
         <h3>Tajemnice radosne (poniedziałki i soboty)</h3>
         <ol>
             <li>Zwiastowanie Najświętszej Maryi Pannie</li>
@@ -108,7 +132,7 @@ updateClock();
             <li>Ukoronowanie Najświętszej Maryi Panny na Królową nieba i ziemi</li>
         </ol>
 
-        <h2>Przebieg modlitwy w <a href="https://www.youtube.com/@jasnagoraklasztorojcowpaul7943">Kaplicy Cudownego Obrazu</a> na <a href="https://jasnagora.pl/" target="_blank">Jasnej Górze</a></h2>
+        <h2 id="pm">Przebieg modlitwy w <a href="https://www.youtube.com/@jasnagoraklasztorojcowpaul7943">Kaplicy Cudownego Obrazu</a> na <a href="https://jasnagora.pl/" target="_blank">Jasnej Górze</a></h2>
 <figure>
         <img src="images/witajkrolowo.jpg" alt="Matka Miłosierdzia">
         <figcaption>
@@ -117,7 +141,7 @@ updateClock();
           [4]
         </figcaption>
       </figure>
-<h3>Witaj Królowo, Matko Miłosierdzia</h3>
+<h3 id="wkmm">Witaj Królowo, Matko Miłosierdzia</h3>
 <p>
 Witaj, Królowo, Matko miłosierdzia,<br>
 życia, słodyczy i nadziejo nasza, witaj!<br>
@@ -137,7 +161,7 @@ O łaskawa, o litościwa, o słodka Panno Maryjo! [3]
 <em>K: Módlmy się. Dozwól nam Wszechmogący Boże, rozważającym tajemnice Świętego Różańca, które wierny Twój Kościół ofiaruje Ci na cześć błogosławionej Maryi, zawsze dziewicy, dostąpić łaski Twojej. Abyśmy całym sercem, Tobie ufność naszą pokładając, doznawali na sobie rozważania tych tajemnic i upragnionych pożytków dostąpili. Przez Chrystusa, Pana naszego.</em><br>
 <strong>W: Amen.</strong><br><br>
 
-<h3>[Różaniec]</h3>
+<h3 id="r">Różaniec</h3>
 <figure>
         <img src="images/rozaniec.jpg" alt="Jak odmawiać modlitwę różańcową?">
         <figcaption>
@@ -178,7 +202,7 @@ O łaskawa, o litościwa, o słodka Panno Maryjo! [3]
     i dopomóż szczególnie tym, którzy najbardziej potrzebują Twojego miłosierdzia.
     </p>
 
-<h3>Litania Loretańska</h3>
+<h3 id="ll">Litania Loretańska</h3>
 Kyrie eleison, Christe eleison, Kyrie eleison.<br>
 Chryste, usłysz nas. Chryste, wysłuchaj nas.<br>
 Ojcze z nieba, Boże, - zmiłuj się nad nami.<br>
@@ -254,7 +278,7 @@ Baranku Boży, który gładzisz grzechy świata,<br>
 <em>K: Módlmy się. Boże, którego Jednorodzony Syn przez swoje życie, śmierć i zmartwychwstanie, wysłużył nam wieczne zbawienie, spraw, abyśmy rozważając tajemnice w Różańcu Najświętszej Maryi Panny, według nich kształtowali swoje życie i osiągnęli zawarte w nich obietnice. Przez Chrystusa, Pana naszego.</em><br><br>
 <strong>W: Amen.</strong><br><br>
 
-<h3>Pod Twoją Obronę</h3>
+<h3 id="pto">Pod Twoją Obronę</h3>
 <p>
 Pod Twoją obronę uciekamy się, święta Boża Rodzicielko,<br>
 naszymi prośbami racz nie gardzić w potrzebach naszych,<br>
@@ -269,7 +293,7 @@ swojemu Synowi nas oddawaj.<br><br>
 
 Amen.
 </p>
-<h3>Modlitwa świętego Bernarda</h3>
+<h3 id="msb">Modlitwa świętego Bernarda</h3>
 <ul>
     <li>
         Pomnij, o Najświętsza Panno Maryjo,<br>
@@ -292,23 +316,17 @@ Amen.
 
     <li>Amen.</li>
 </ul>
-    </section>
-    <section>
+    </div>
+
+</main>
+</section>
+    <section class="bibliografia">
     <h2>Bibliografia</h2>
   <ol>
-    <li><a href="https://modlitwy24.pl/wp-content/uploads/2020/04/jak-odmawiac-rozaniec-calosc.jpg">
-      https://modlitwy24.pl/wp-content/uploads/2020/04/jak-odmawiac-rozaniec-calosc.jpg</a> [dostęp 2026-02-26.]</li>
-    </li>
-    <li><a href="https://niezbednik.niedziela.pl/artykul/281/Litania-Loretanska-do-Najswietszej-Maryi">
-      https://niezbednik.niedziela.pl/artykul/281/Litania-Loretanska-do-Najswietszej-Maryi</a> [dostęp 2026-02-26.]</li>
-    </li>
-    <li><a href="https://www.faustyna.pl/zmbm/witaj-krolowo/">
-      https://www.faustyna.pl/zmbm/witaj-krolowo/</a> [dostęp 2026-02-26.]</li>
-    </li>
-    <li><a href="https://www.faustyna.pl/zmbm/wp-content/uploads/2014/12/IMG_7387-1024x576.jpg">
-      https://www.faustyna.pl/zmbm/wp-content/uploads/2014/12/IMG_7387-1024x576.jpg</a> [dostęp 2026-02-26.]</li>
-    </li>
-  </ol>
+        <li><a href="https://musicamsacram.pl/spiewnik/" target="_blank" rel="noopener noreferrer">
+            https://musicamsacram.pl/spiewnik/
+        </a></li>
+    </ol>
     </section>
 </body>
 </html>

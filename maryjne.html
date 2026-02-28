@@ -19,7 +19,6 @@
 </div>
 
 
-
 <div class="hamburger" onclick="toggleMenu()">☰</div>
 
 <div id="menu-container"></div><script>
@@ -44,7 +43,6 @@ function toggleMenu() {
   if (menu) menu.classList.toggle("active");
 }
 </script>
-
 
 </nav>
 <div id="clock-container">
@@ -71,7 +69,29 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 </script>
-    <section>
+
+<section>
+<!---sidebar-->
+<script>
+document.querySelectorAll('#toc a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault(); // blokuje standardowe skakanie
+    const target = document.querySelector(link.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' }); // płynne przewijanie
+  });
+});
+</script>
+
+<main class="container">
+    <aside class="sidebar" id="toc">
+        <h3>Spis treści</h3>
+        <ul>
+            <li><a href="#b">Bogurodzica</a></li>
+            <li><a href="#wkmm">Witaj Królowo, Matko Miłosierdzia</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
         <h1>Pieśni maryjne</h1><figure>
         <img src="images/bogurodzica.jpg" alt="Bogurodzica">
         <figcaption>
@@ -80,7 +100,7 @@ updateClock();
           [1]
         </figcaption>
       </figure>
-        <h2>Bogurodzica (Pierwszy polski hymn narodowy)</h2>
+        <h2 id="b">Bogurodzica (Pierwszy polski hymn narodowy)</h2>
         <p>
         Bogurodzica, dziewica, Bogiem sławiena Maryja!<br>
         U twego syna, Gospodzina, matko zwolena Maryja!<br>
@@ -95,7 +115,7 @@ updateClock();
         Kirielejson.
         </p>
         
-        <h2>Witaj Królowo, Matko Miłosierdzia</h2>
+        <h2 id="wkmm">Witaj Królowo, Matko Miłosierdzia</h2>
         <p>
         Witaj, Królowo, Matko miłosierdzia,<br>
         życia, słodyczy i nadziejo nasza, witaj!<br>
@@ -108,13 +128,17 @@ updateClock();
         po tym wygnaniu nam okaż.<br>
         O łaskawa, o litościwa, o słodka Panno Maryjo!
         </p>
-    </section>
-<section>
+    </div>
+
+</main>
+</section>
+    <section class="bibliografia">
     <h2>Bibliografia</h2>
   <ol>
     <li><a href="https://www.facebook.com/photo.php?fbid=5455708047842367&id=622617124484841&set=a.631409140272306">
       https://www.facebook.com/photo.php?fbid=5455708047842367&id=622617124484841&set=a.631409140272306</a> [dostęp 2026-02-27.]</li>
     </li>
+    </ol>
     </section>
 </body>
 </html>

@@ -19,7 +19,6 @@
 </div>
 
 
-
 <div class="hamburger" onclick="toggleMenu()">☰</div>
 
 <div id="menu-container"></div><script>
@@ -44,7 +43,6 @@ function toggleMenu() {
   if (menu) menu.classList.toggle("active");
 }
 </script>
-
 
 </nav>
 <div id="clock-container">
@@ -71,10 +69,34 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 </script>
-    <section>
+
+<section>
+<!---sidebar-->
+<script>
+document.querySelectorAll('#toc a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault(); // blokuje standardowe skakanie
+    const target = document.querySelector(link.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' }); // płynne przewijanie
+  });
+});
+</script>
+
+<main class="container">
+    <aside class="sidebar" id="toc">
+        <h3>Spis treści</h3>
+        <ul>
+            <li><a href="#dswp">Duchu Święty wołam przyjdź</a></li>
+            <li><a href="#osdp">O Stworzycielu Duchu Przyjdź – Hymn do Ducha Świętego</a></li>
+            <li><a href="#sods">Sekwencja o Duchu Świętym</a></li>
+            <li><a href="#wcpum">Wzywam Cię, przyjdź umocnij mnie</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
         <h1>Pieśni do Ducha Świętego</h1>
 
-<h2>Duchu Święty wołam przyjdź</h2>
+<h2 id="dswp">Duchu Święty wołam przyjdź</h2>
 <ul>
     <li>
         Duchu Święty wołam przyjdź<br>
@@ -91,7 +113,7 @@ updateClock();
     </li>
 </ul>
 
-<h2>O Stworzycielu Duchu Przyjdź – Hymn do Ducha Świętego</h2>
+<h2 id="osdp">O Stworzycielu Duchu Przyjdź – Hymn do Ducha Świętego</h2>
 <ol>
     <li>
         O Stworzycielu Duchu, przyjdź,<br>
@@ -138,7 +160,7 @@ updateClock();
     </li>
 </ol>
 
-<h2>Sekwencja o Duchu Świętym</h2>
+<h2 id="sods">Sekwencja o Duchu Świętym</h2>
 <ul>
     <li>
         Przybądź, Duchu Święty,<br>
@@ -186,7 +208,7 @@ updateClock();
     </li>
 </ul>
 
-<h2>Wzywam Cię, przyjdź umocnij mnie</h2>
+<h2 id="wcpum">Wzywam Cię, przyjdź umocnij mnie</h2>
 <p>
 Wzywam Cię, przyjdź umocnij mnie,<br>
 Oddal mroku cień, jasny rozpal dzień,<br>
@@ -195,7 +217,17 @@ Tyś natchnieniem mym i przebudzeniem,<br>
 Duchu Święty, (przyjdź!)
 </p>
 
-    </section>
+    </div>
 
+</main>
+</section>
+    <section class="bibliografia">
+    <h2>Bibliografia</h2>
+  <ol>
+        <li><a href="https://musicamsacram.pl/spiewnik/" target="_blank" rel="noopener noreferrer">
+            https://musicamsacram.pl/spiewnik/
+        </a></li>
+    </ol>
+    </section>
 </body>
 </html>

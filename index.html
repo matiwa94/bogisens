@@ -72,20 +72,44 @@ updateClock();
 </script>
 <section>
 <main class="container">
-    <div class="content">
-        <article class="post">
-            <h2>Wpis #1 – Powitanie</h2>
-            <p class="date">27 lutego 2026</p>
-            <p>Witam na moim blogu! Tutaj znajdziesz przemyślenia, inspiracje i małe ciekawostki. 🌟</p>
-        </article>
-
-        <article class="post">
-            <h2>Wpis #2 – Pierwsze refleksje</h2>
-            <p class="date">26 lutego 2026</p>
-            <p>Chcę, aby ten blog był przyjemny dla oka, spokojny i lekki, bez nadmiaru efektów. 🌿</p>
-        </article>
+    
+    <figure>
+        <img src="images/poslugalektorskawlubojnie1.jpg">
+        <figcaption>
+          Posługa lektorska gościnnie na uroczystościach odpustowych 27.06.2025 w <a href="http://parafialubojna.pl/" target="_blank" rel="noopener noreferrer">
+        Parafii pw. Najświętszego Serca Pana Jezusa w Lubojnie</a>  
+          Źródło: [1]
+        </figcaption>
+      </figure>
     </div>
 </main>
 </section>
+    <section class="bibliografia">
+  <h2>Bibliografia</h2>
+  <ol>
+    <li><a href="https://www.facebook.com/p/Parafia-Naj%C5%9Bwi%C4%99tszego-Serca-Pana-Jezusa-w-Lubojnie-61562438030624/?locale=pl_PL" target="_blank" rel="noopener noreferrer">
+      https://www.facebook.com/p/Parafia-Naj%C5%9Bwi%C4%99tszego-Serca-Pana-Jezusa-w-Lubojnie-61562438030624/?locale=pl_PL"</a> [dostęp 2026-02-26.]</li>
+  </ol>
+  </section>
+
+  <script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+document.querySelector(".next").addEventListener("click", () => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+});
+</script>
 </body>
 </html>
